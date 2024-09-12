@@ -6,7 +6,7 @@ resource "aws_lambda_function" "my_lambda" {
   runtime       = "python3.12"
   environment {
     variables = {
-      SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
+      SLACK_WEBHOOK_URL = "https://hooks.slack.com/something/somethingxyz1235"
     }
   }
 }
