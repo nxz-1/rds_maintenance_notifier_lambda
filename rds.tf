@@ -12,6 +12,7 @@ resource "aws_db_instance" "my_db" {
   vpc_security_group_ids  = [aws_security_group.my_db_sg.id]
   backup_retention_period = 7
   multi_az                = false
+  skip_final_snapshot      = true
 }
 
 resource "aws_db_subnet_group" "my_db_subnet_group" {
